@@ -1,0 +1,31 @@
+# Java compiled files
+*.class
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Runtime logs and test outputs
+*.csv
+*.log
+
+# Local configuration and secrets
+config.properties
+config.local
+.env
+.env.*
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Local libraries - do not commit binaries
+jnetpcap.jar
+jnetpcap.dll
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+~$*.docx
