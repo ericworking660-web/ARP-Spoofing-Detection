@@ -393,26 +393,26 @@ public class Dump_ARP_Spoofing_Detection {
 
 		
         // Same IP and MAC
+      
         // Same IP and MAC: Recovery / Normal state
         if (oldMAC.equals(mac)) {
 
             // Clear previous alert records for this Host IP
             boolean recovered = alertedPairs.removeIf(
-                    pair -> pair.startsWith("HOST|" + ip + "|")
+                pair -> pair.startsWith("HOST|" + ip + "|")
             );
 
             System.out.println(
-                    "[NORMAL] IP-MAC mapping unchanged");
+                "[NORMAL] IP-MAC mapping unchanged");
 
             // Show RECOVERY only if a previous alert existed
             if (recovered) {
                 System.out.println(
-                        "[RECOVERY] Previous Host alerts cleared");
+                    "[RECOVERY] Previous Host alerts cleared");
             }
 
             return;
         }
-
 
 		// =====================================
 		// C. IP-MAC Change Alert
