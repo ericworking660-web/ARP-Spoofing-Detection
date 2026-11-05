@@ -28,5 +28,6 @@ jnetpcap.dll
 *.tmp
 *.swp
 *.swo
-~$*.docx*.docx
+~$*
+*.docx
 ~$*
